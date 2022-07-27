@@ -5,6 +5,7 @@ import Product from '../models/Product';
 import db from '../utils/db';
 import { Store } from '../utils/Store';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const Home = ({ products }) => {
   const { state, dispatch } = useContext(Store);

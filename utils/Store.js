@@ -34,12 +34,12 @@ function reducer(state, action) {
     }
     case 'CART_RESET':
       return {
-        // ...state,
-        // cart: {
-        //   cartItems: [],
-        //   shippingAddress: { location: {} },
-        //   paymentMethod: '',
-        // },
+        ...state,
+        cart: {
+          cartItems: [],
+          shippingAddress: { location: {} },
+          paymentMethod: '',
+        },
       };
     case 'SAVE_SHIPPING_ADDRESS':
       return {
